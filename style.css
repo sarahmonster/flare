@@ -230,7 +230,7 @@ input,
 select,
 textarea {
   color: #34353B;
-  font-family: freight-text-pro, Georgia, serif;
+  font-family: "Freight Text Pro", freight-text-pro, Georgia, serif;
   font-size: 19.2px;
   font-size: 1.2rem;
   line-height: 1.6; }
@@ -255,13 +255,13 @@ h1, h2, h3, .posted-on,
   .cat-links a,
   .tags-links a,
   .nix-prefix a, .wanderlist-country-widget li a, h4 a, h5 a, h6 a {
-    border-bottom: none; }
+    text-decoration: none; }
 
 h1 {
   color: #646671;
   letter-spacing: -0.03em;
   line-height: 1;
-  font-family: lust-display, freight-text-pro, Georgia, serif;
+  font-family: "Lust Display", lust-display, "Freight Text Pro", freight-text-pro, Georgia, serif;
   font-size: 57.6px;
   font-size: 3.6rem; }
   @media (min-width: 768px) {
@@ -289,7 +289,7 @@ h3, .posted-on,
 .tags-links,
 .nix-prefix, .wanderlist-country-widget li {
   color: #AAABAF;
-  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif;
   font-size: 12.8px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -324,12 +324,12 @@ p {
 
 .cap::first-letter,
 .single:not(.single-wanderlist-location) .entry-content p:first-of-type::first-letter {
-  color: #f3c548;
+  color: #ff6fbd;
   display: block;
   float: left;
   font-size: 112px;
   font-size: 7rem;
-  font-family: freight-big-pro, freight-text-pro, Georgia, serif;
+  font-family: freight-big-pro, "Freight Text Pro", freight-text-pro, Georgia, serif;
   font-weight: 700;
   line-height: 0.6;
   margin: 14px 5px 0 -5px; }
@@ -397,7 +397,7 @@ big {
   font-size: 125%; }
 
 strong {
-  background: #fbebc0;
+  background: #ffeff7;
   color: #34353B;
   padding: 0 5px; }
 
@@ -542,19 +542,22 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-  border-bottom: 2px solid #a32020;
-  color: #a32020;
-  text-decoration: none;
+.entry-content a {
+  color: #cc3788;
   transition: all 0.2s ease-out;
-  padding-bottom: 1px; }
-  a:hover, a:focus, a:active {
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 #FAFAFC, -0.05em 0 0 #FAFAFC, 0 0.05em 0 #FAFAFC, 0 -0.05em 0 #FAFAFC, 0.1em 0 0 #FAFAFC, -0.1em 0 0 #FAFAFC, 0 0.1em 0 #FAFAFC, 0 -0.1em 0 #FAFAFC;
+  background-image: linear-gradient(to right, #cc3788 0%, #cc3788 100%);
+  background-repeat: repeat-x;
+  background-position: bottom 0.25em center;
+  background-size: 100% 0.1em; }
+  .entry-content a:hover, .entry-content a:focus, .entry-content a:active {
     color: #3F9CBC;
-    padding-bottom: 0;
-    border-bottom: 2px solid #3F9CBC; }
-  a:focus {
+    background-image: linear-gradient(to right, #3F9CBC 0%, #3F9CBC 100%); }
+  .entry-content a:focus {
     outline: thin dotted; }
-  a:hover, a:active {
+  .entry-content a:hover, .entry-content a:active {
     outline: 0; }
 
 /*--------------------------------------------------------------
@@ -572,7 +575,7 @@ a {
   .comment-navigation a,
   .posts-navigation a,
   .post-navigation a {
-    border-bottom: none;
+    text-decoration: none;
     font-size: 17.6px;
     font-size: 1.1rem;
     display: block;
@@ -601,7 +604,7 @@ a {
   .post-navigation span:not(.caps) {
     color: #AAABAF;
     display: block;
-    font-family: proxima-nova, Helvetica, Arial, sans-serif;
+    font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif;
     font-size: 14.4px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -644,7 +647,7 @@ a {
 ## Archive navigation
 --------------------------------------------------------------*/
 .phoenix-numeric-pagination {
-  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif;
   font-size: 19.2px;
   font-size: 1.2rem;
   line-height: 1.2;
@@ -659,7 +662,7 @@ a {
   .phoenix-numeric-pagination .page-numbers.current {
     border-radius: 50%;
     border: 1px solid;
-    color: #f3c548;
+    color: #ff6fbd;
     display: inline-block;
     height: 34px;
     padding: 4.5px 0;
@@ -691,7 +694,7 @@ a {
   overflow: hidden; }
   .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
     background-color: #f1f1f1;
-    border-bottom: none;
+    text-decoration: none;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
@@ -755,7 +758,7 @@ a {
 /* Navigation */
 .main-navigation {
   display: inline-block;
-  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif;
   max-width: 1600px;
   width: 100%;
   vertical-align: top; }
@@ -772,7 +775,7 @@ a {
     .main-navigation li:first-child::before {
       display: none; }
   .main-navigation a {
-    border-bottom: none;
+    text-decoration: none;
     color: #34353B;
     display: inline-block;
     padding: 5px 10px; }
@@ -883,17 +886,17 @@ body {
 
 /* Category links */
 .cat-links a {
-  border-bottom: none;
-  color: #f6d478; }
+  text-decoration: none;
+  color: #ffa2d4; }
   .cat-links a::before {
-    background-color: #f3c548;
+    background-color: #ff6fbd;
     content: '';
     display: inline-block;
     height: 10px;
     margin-right: 5px;
     width: 10px; }
   .cat-links a:hover {
-    color: #f3c548; }
+    color: #ff6fbd; }
     .cat-links a:hover::before {
       background-color: #34353B; }
 
@@ -909,7 +912,7 @@ body {
   .blog a,
   .archive a,
   .home a {
-    border-bottom: none; }
+    text-decoration: none; }
   .blog article,
   .archive article,
   .home article {
@@ -946,7 +949,7 @@ body {
   .blog .entry-title,
   .archive .entry-title,
   .home .entry-title {
-    font-family: lust-display, freight-text-pro, Georgia, serif;
+    font-family: "Lust Display", lust-display, "Freight Text Pro", freight-text-pro, Georgia, serif;
     font-style: normal;
     font-size: 38.4px;
     font-size: 2.4rem;
@@ -993,19 +996,26 @@ body {
   display: none; }
 
 /* Styles for all single posts */
-@media (min-width: 768px) {
-  .single .entry-header {
-    margin-top: 80px; } }
+.single .entry-header {
+  background: #34353B;
+  margin: -20px;
+  width: calc(100% + 40px);
+  min-height: 90vh;
+  padding: 80px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .single .posted-on {
-  color: #83848a; }
+  color: #FAFAFC; }
 
 .single .phoenix-month,
 .single .phoenix-date {
   color: #b7b8bb; }
 
 .single .entry-title {
-  color: #646671;
+  color: #ff6fbd;
   margin: 20px 0; }
 
 .single .subtitle {
@@ -1101,7 +1111,7 @@ body {
   margin-right: -85px; }
 
 .phoenix-the-unbearable-lightness-of-designing .word3 {
-  font-family: freight-big-pro, freight-text-pro, Georgia, serif;
+  font-family: freight-big-pro, "Freight Text Pro", freight-text-pro, Georgia, serif;
   color: #FAFAFC;
   font-size: 13vw;
   margin-top: -81px;
@@ -1132,7 +1142,7 @@ body {
   .contact-card li {
     list-style-type: none; }
   .contact-card a {
-    border-bottom: none;
+    text-decoration: none;
     color: #FAFAFC; }
     .contact-card a .phoenix-icon {
       height: 20px;
@@ -1198,7 +1208,7 @@ body {
 /* Override link colour set by Mapbox */
 .leaflet-container a {
   border: none;
-  color: #a32020; }
+  color: #cc3788; }
   .leaflet-container a:hover {
     color: #3F9CBC; }
 
@@ -1296,7 +1306,7 @@ body {
     text-align: left; }
   .wanderlist-widget dl,
   .wanderlist-widget ul {
-    font-family: freight-text-pro, Georgia, serif;
+    font-family: "Freight Text Pro", freight-text-pro, Georgia, serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.4;
@@ -1368,7 +1378,7 @@ body {
     border: 2px solid #AAABAF;
     border-radius: 50%;
     color: #AAABAF;
-    font-family: proxima-nova, Helvetica, Arial, sans-serif;
+    font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif;
     font-weight: normal;
     height: 80px;
     line-height: 0.7;
@@ -1404,8 +1414,8 @@ body {
     border-color: #37894c;
     color: #37894c; }
   .wanderlist-number-widget .wanderlist-continent-count {
-    border-color: #f3c548;
-    color: #f3c548; }
+    border-color: #ff6fbd;
+    color: #ff6fbd; }
 
 /* Text snippets */
 .wanderlist-country-count {
@@ -1762,7 +1772,7 @@ img {
       box-shadow: none;
       border: none; }
   .single-pieces a:not(.url-link) {
-    border-bottom: none; }
+    text-decoration: none; }
   .single-pieces .url-link {
     display: block;
     width: 100%;
@@ -1881,7 +1891,7 @@ figure {
   .wp-caption a:hover,
   figure a,
   figure a:hover {
-    border-bottom: none; }
+    text-decoration: none; }
   .wp-caption p,
   figure p {
     display: none;
@@ -1969,7 +1979,7 @@ figcaption {
   padding: 4px; }
 
 .menu-social-menu-container ul svg {
-  fill: #a32020;
+  fill: #cc3788;
   height: 28px;
   speak: none;
   transition: fill .1s ease-in 0;
